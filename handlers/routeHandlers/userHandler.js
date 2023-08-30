@@ -112,8 +112,6 @@ handler._users.put = (requestProperties, callback) => {
 
     const password = typeof(requestProperties.body.password) === 'string' && requestProperties.body.password.trim().length > 0 ? requestProperties.body.password : false;
 
-    console.log("phone", requestProperties);
-
     if (phone) {
         if (firstName || lastName || password) {
             // verify token
